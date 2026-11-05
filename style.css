@@ -1,0 +1,101 @@
+:root {
+  color-scheme: light;
+  --canvas: #f3f1ee;
+  --surface: #ffffff;
+  --ink: #20242e;
+  --ink2: #5b5e66;
+  --muted: #72757c;
+  --green: #0b7d53;
+  --line: rgba(32, 36, 46, 0.12);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font: 16px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow-wrap: anywhere;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px 72px;
+}
+header {
+  margin-bottom: 32px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+h1 {
+  margin: 20px 0 6px;
+  font: 600 30px/1.25 Lora, Georgia, "Times New Roman", serif;
+}
+h2 {
+  margin: 34px 0 8px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+p,
+li {
+  color: var(--ink2);
+}
+p {
+  margin: 0 0 12px;
+}
+ul {
+  margin: 0 0 12px;
+  padding-left: 22px;
+}
+a {
+  color: var(--green);
+}
+.meta,
+.tagline {
+  color: var(--muted);
+}
+.meta {
+  font-size: 14px;
+}
+.tagline {
+  margin: 0;
+}
+.card {
+  margin: 14px 0;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+.card h2 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+.card p:last-child {
+  margin-bottom: 0;
+}
+.button {
+  display: inline-block;
+  max-width: 100%;
+  padding: 12px 22px;
+  background: var(--green);
+  border-radius: 999px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+}
